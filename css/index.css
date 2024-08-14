@@ -1,0 +1,470 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard-dynamic-subset.css");
+body, h1, h2, h3, h4, h5, h6, th, td, input, select, textarea {
+    color:#454545;
+    font-family:Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+    font-size:12px;
+    font-weight:normal;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;}
+body{
+    background-color: #f5f5f5;
+}
+.iboss_quiz_banner_img{display: inline-block;}
+.iboss_quiz_banner_img img{
+    width: 820px;
+    height: 280px;
+    border-radius: 20px;
+}
+.container_today_marketing_quiz_top{
+    background-color: white;
+    margin-top: 30px;
+    border-radius: 12px;
+    width: 820px;
+}
+.container_today_marketing_quiz_top .padding50{
+    padding: 50px;
+    
+}
+.container_today_marketing_quiz_top .padding50 .today_marketing_quiz{
+    border-bottom: 1px solid rgba(217, 217, 217, 0.5);
+    margin-bottom: 37px;
+    
+}
+.container_today_marketing_quiz_top .padding50 .today_marketing_quiz strong{
+    width: 700;
+    font-size: 28px;
+    line-height: 33.41px;
+    color: black;
+
+}
+.container_today_marketing_quiz_top .padding50 .today_marketing_quiz > p{
+    font-size: 16px;
+    line-height: 19.09px;
+    color: #888;
+}
+.container_today_marketing_quiz_top .padding50 .container_today_marketing_quiz_bottom .quiz_profile{
+    display: flex;
+}
+.container_today_marketing_quiz_top .padding50 .container_today_marketing_quiz_bottom .quiz_profile .profile_img img{
+    width: 60px;
+    height: 60px;
+    border-radius: 20px;
+}
+.container_today_marketing_quiz_top .padding50 .container_today_marketing_quiz_bottom .quiz_profile .marketing_nickname{
+    margin-left: 16px;
+}
+.container_today_marketing_quiz_top .padding50 .container_today_marketing_quiz_bottom .quiz_profile .marketing_nickname >span{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21.48px;
+    letter-spacing: -0.5px;
+    color: #000000;
+    display: block;
+    margin-top: 8px;
+    
+}
+.container_today_marketing_quiz_top .padding50 .container_today_marketing_quiz_bottom .quiz_profile .marketing_nickname > p{
+    font-size: 14px;
+    line-height: 16.71px;
+    color: #666;
+    margin: 6px 0 0 0;
+}
+.container_today_marketing_quiz_top .padding50 .container_today_marketing_quiz_bottom .quiz_detail > p{
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 28px;
+    color: black;
+}
+.container_today_marketing_quiz_top .padding50 .container_today_marketing_quiz_bottom .quiz_detail img{
+    width: 720px;
+    height: 376px;
+    border-radius: 8px;
+    margin-bottom: 28px;
+}
+/* 버튼 */
+
+.radio-container {
+    display: flex;
+    flex-direction: column;
+}
+.radio-box:hover{
+    background-color: #ececec;
+}
+
+.radio-box {
+    background-color: #F8F8F8; /* 기본 색상 */
+    padding: 12px 20px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease; /* 색상 전환 애니메이션 */
+    display: flex;
+    position: relative; /* 아이콘 겹치기 설정 */
+    cursor: pointer;
+}
+
+.radio-box.selected {
+    background-color: #D9D9D9; /* 선택된 색상 */
+    font-weight: 700;
+    
+}
+
+.radio-box label {
+    color: black;
+    font-size: 15px;
+    line-height: 20px;
+    display: flex;
+    position: relative; /* 아이콘 겹치기 설정 */
+    padding-left: 30px; /* 텍스트를 오른쪽으로 이동 */
+    
+}
+
+/* 기본 라디오 버튼 숨기기 */
+.radio-box input[type="radio"] {
+    display: none; /* 기본 라디오 버튼 숨기기 */
+}
+
+/* 아이콘 스타일 */
+.radio-box label i {
+    font-size: 20px; /* 아이콘 크기 조절 */
+    position: absolute; /* 아이콘 겹치기 설정 */
+    left: 0;
+}
+
+/* 기본 아이콘 보이기 */
+.radio-box .fa-light {
+    visibility: visible;
+}
+
+/* 선택된 상태에서 기본 아이콘 숨기기 */
+.radio-box.selected .fa-light {
+    visibility: hidden;
+}
+
+/* 선택된 상태에서 선택된 아이콘 보이기 */
+.radio-box.selected .fa-solid {
+    visibility: visible;
+}
+
+/* 기본 상태에서 선택된 아이콘 숨기기 */
+.radio-box .fa-solid {
+    visibility: hidden;
+}
+/* 정답제출하기 */
+.container_today_marketing_quiz_top .padding50 .submit_correct_answer .button-wrapper .custom-button{
+    background-color: #333;
+    padding: 12px 0;
+    border-radius: 6px;
+    width: 240px;
+    color: white;
+    transition: none;
+    display: block;
+    margin: 0 auto;
+    font-size: 16px;
+    margin-top: 40px;
+    font-family: Pretendard;
+}
+.button-wrapper.selected {
+    background-color: #D9D9D9;
+}
+/* 행운퀴즈 */
+
+/* 최상위 컨테이너 */
+.lucky_quiz {
+    background-color: white; 
+    margin-top: 30px;
+    border-radius: 12px;
+    width: 820px;
+}
+
+/* 안쪽 여백이 있는 컨테이너 */
+.padding_50 {padding: 50px;}
+
+/* 상단 정보 섹션의 제목 */
+.lucky_quiz_top strong {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 33px;
+    color: black;
+}
+
+/* 상단 정보 섹션의 설명 텍스트 */
+.lucky_quiz_top p {
+    font-size: 16px;
+    line-height: 19px;
+    color: #888;
+}
+
+/* 상단 정보 섹션의 이미지와 캐시 정보 */
+.lucky_quiz_top img {
+    width: 36px;
+    height: 36px;
+    border-radius: 40px;
+    
+}
+.lucky_quiz .padding_50 .lucky_quiz_top .lucky_quiz_top_img {
+    background-color: #f9f9f9;
+    padding: 12px 20px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color :black;
+    display: flex;
+    align-items: center;
+
+}
+.lucky_quiz .padding_50 .lucky_quiz_top .cash_12345 .lucky_quiz_top_img img{
+    margin-right: 20px;
+}
+.lucky_quiz_top span {
+    font-weight: 700;
+    color: #4429f3;
+}
+
+/* 각 퀴즈 박스 */
+.lucky_quiz_box1 ,
+.lucky_quiz_box2 ,
+.lucky_quiz_box3 {display: flex; padding: 20px 0; border-bottom: 1px solid #d9d9d9;  justify-content: space-between; align-items: center;}
+.lucky_quiz_box4 {display: flex; padding: 20px 0; justify-content: space-between; align-items: center;}
+
+
+
+/* 각 퀴즈 박스 안의 이미지 컨테이너 */
+.lucky_quiz_box1_img img,
+.lucky_quiz_box2_img img,
+.lucky_quiz_box3_img img,
+.lucky_quiz_box4_img img {width: 60px; height: 60px; border-radius: 12px; display: block;}
+
+/* 각 퀴즈 박스 안의 텍스트 컨테이너 안의 제목 텍스트 */
+.lucky_quiz_box1_text span ,
+.lucky_quiz_box2_text span ,
+.lucky_quiz_box3_text span ,
+.lucky_quiz_box4_text span {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: -0.5px;
+    margin-left: 20px;
+    margin-top: 6.5px;
+    display: block;
+    color: black;
+}
+
+/* 각 퀴즈 박스 안의 텍스트 컨테이너 안의 설명 텍스트 */
+.lucky_quiz_box1_text >p ,
+.lucky_quiz_box2_text >p {
+    font-size: 15px;
+    line-height: 18px;
+    color: #4429f3;
+    margin: 8px 0 0 20px;
+}
+.lucky_quiz_box3_text >p ,
+.lucky_quiz_box4_text >p {
+    margin: 8px 0 0 20px;
+    font-size: 15px;
+    line-height: 18px;
+    color: #888;
+}
+
+/* 완료된 퀴즈 박스에만 있는 완료 표시 */
+.lucky_quiz_box3_complete {}
+.lucky_quiz_box3_complete p {
+    background-color: #eee;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 15px;
+    line-height: 18px;
+    margin-right: 20px;
+}
+
+/* 각 퀴즈 박스 안의 화살표 아이콘 컨테이너 */
+.lucky_quiz_box3_arrow .fa-lightn{
+    margin-left: 20px;
+}
+
+.lucky_quiz_box1_arrow, 
+.lucky_quiz_box2_arrow, 
+.lucky_quiz_box3_arrow, 
+.lucky_quiz_box4_arrow {
+    transition: transform 0.3s ease;
+}
+
+/* 각 박스에 마우스를 올렸을 때 화살표 위치 조정 */
+.lucky_quiz_box1:hover .lucky_quiz_box1_arrow,
+.lucky_quiz_box2:hover .lucky_quiz_box2_arrow,
+.lucky_quiz_box3:hover .lucky_quiz_box3_arrow,
+.lucky_quiz_box4:hover .lucky_quiz_box4_arrow {
+    transform: translateX(5px); /* 오른쪽으로 5px 이동 */
+}
+
+/* 멤버십 가입 문구 */
+.padding_50 > p {
+    background-color: #f5f5f5;
+    padding: 25px 0;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 19px;
+    line-height: 20px;
+    color: black;
+}
+.padding_50 > p span {
+    font-weight: 700;
+    size: 17px;
+    line-height: 20px;
+}
+.lucky_quiz_box1_top,
+.lucky_quiz_box2_top,
+.lucky_quiz_box3_top,
+.lucky_quiz_box4_top{display: flex;}
+.lucky_quiz_box3_btm{display: flex;}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.lucky_quiz_box3_btm {
+    display: flex;
+    align-items: center; /* 세로 가운데 정렬 */
+    justify-content: space-between;
+}
+
+.lucky_quiz_box3_arrow .fa-thin {
+    margin-left: auto; /* 화살표를 오른쪽 끝에 배치 */
+    align-self: center; /* 화살표를 세로 가운데 정렬 */
+}
+
+/* 퀴즈랭킹 */
+/* 퀴즈 랭킹 전체 컨테이너 */
+.quiz_ranking {
+    background-color: white;
+    margin-top: 30px;
+    border-radius: 12px;
+    width: 820px;
+}
+
+/* 퀴즈 랭킹 상단 */
+.quiz_ranking_top strong {
+    color: black;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 33px;
+    letter-spacing: -1px;
+}
+.quiz_ranking_top p {
+    font-size: 16px;
+    line-height: 20px;
+    color: #666;}
+
+/* 각 퀴즈 랭킹 박스 */
+.quiz_ranking_btm_box1 ,
+.quiz_ranking_btm_box2 ,
+.quiz_ranking_btm_box3 ,
+.quiz_ranking_btm_box4 ,
+.quiz_ranking_btm_box5 ,
+.quiz_ranking_btm_box6 ,
+.quiz_ranking_btm_box7,
+.quiz_ranking_btm_box8 ,
+.quiz_ranking_btm_box9 ,
+.quiz_ranking_btm_box10 {
+    display: flex; 
+    justify-content: space-between;
+    border-top: 1px solid #eaeaea;
+}
+.quiz_ranking_btm_box10{
+    border-bottom: 1px solid #eaeaea;
+}
+/* 각 박스의 왼쪽 부분 */
+.quiz_ranking_btm_box1_left ,
+.quiz_ranking_btm_box2_left ,
+.quiz_ranking_btm_box3_left ,
+.quiz_ranking_btm_box4_left ,
+.quiz_ranking_btm_box5_left ,
+.quiz_ranking_btm_box6_left ,
+.quiz_ranking_btm_box7_left ,
+.quiz_ranking_btm_box8_left ,
+.quiz_ranking_btm_box9_left ,
+.quiz_ranking_btm_box10_left {
+    display: flex;
+    color: black;
+}
+
+/* 각 박스의 오른쪽 부분 */
+.quiz_ranking_btm_box1_right p,
+.quiz_ranking_btm_box2_right p,
+.quiz_ranking_btm_box3_right p {
+    font-weight: 700;
+    color: #4429f3;
+    
+}
+
+/* 각 박스의 이미지 */
+.quiz_ranking_btm_box1 img ,
+.quiz_ranking_btm_box2 img,
+.quiz_ranking_btm_box3 img ,
+.quiz_ranking_btm_box4 img,
+.quiz_ranking_btm_box5 img {
+    width: 28px;
+    height: 28px;
+    border-radius: 30px;
+    margin: auto 0;
+    margin-right: 20px;
+}
+
+/* 각 박스의 텍스트 */
+.quiz_ranking_btm_box1 p ,
+.quiz_ranking_btm_box2 p ,
+.quiz_ranking_btm_box3 p ,
+.quiz_ranking_btm_box4 p ,
+.quiz_ranking_btm_box5 p ,
+.quiz_ranking_btm_box6 p ,
+.quiz_ranking_btm_box7 p ,
+.quiz_ranking_btm_box8 p ,
+.quiz_ranking_btm_box9 p ,
+.quiz_ranking_btm_box10 p {
+    font-size: 16px;
+    line-height: 20px;
+    
+
+}
+
+/* 각 박스의 순위 번호 */
+.quiz_ranking_btm_box1 span,
+.quiz_ranking_btm_box2 span ,
+.quiz_ranking_btm_box3 span ,
+.quiz_ranking_btm_box4 span ,
+.quiz_ranking_btm_box5 span ,
+.quiz_ranking_btm_box6 span ,
+.quiz_ranking_btm_box7 span ,
+.quiz_ranking_btm_box8 span ,
+.quiz_ranking_btm_box9 span ,
+.quiz_ranking_btm_box10 span {
+    margin: auto 0;
+    font-size: 16px;
+    line-height: 20px;
+    color: black;
+    margin-right: 20px;
+}
+
+.quiz_ranking_btm_box1 span,
+.quiz_ranking_btm_box2 span ,
+.quiz_ranking_btm_box3 span {
+    font-weight: 700;
+}
+
+.quiz_ranking_btm_box1_left p,
+.quiz_ranking_btm_box2_left p,
+.quiz_ranking_btm_box3_left p,
+.quiz_ranking_btm_box4_left p,
+.quiz_ranking_btm_box5_left p {
+    font-weight: 700;
+
+}
+
+.quiz_ranking_btm_box4_right,
+.quiz_ranking_btm_box5_right,
+.quiz_ranking_btm_box6_right,
+.quiz_ranking_btm_box7_right,
+.quiz_ranking_btm_box8_right,
+.quiz_ranking_btm_box9_right,
+.quiz_ranking_btm_box10_right{
+    color: black;
+}
